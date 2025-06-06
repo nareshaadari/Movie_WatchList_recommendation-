@@ -24,7 +24,7 @@ function Movies({handletoaddWatchlist,handletoremoveWatchlist,watchList}) {
   }
 
   useEffect(()=>{
-    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=b132e2b86d20dd2b999715f31992746a&language=en-US&page=${pageNo}`).then(function(res){
+    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key="YOUR_API_KEY"&language=en-US&page=${pageNo}`).then(function(res){
       setmovies(res.data.results);
       console.log(res.data);
      
